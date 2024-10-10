@@ -1,10 +1,11 @@
 import Image from 'next/future/image'
-import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import siteMeta, { projects } from '@/data/siteMeta'
+import siteMeta from '@/data/siteMeta'
+
 function LinkIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -16,34 +17,66 @@ function LinkIcon(props) {
   )
 }
 
+const projects = [
+  {
+    name: 'Formula 1 AI Analysis',
+    description:
+      'An open-source project that uses AI to predict the outcome of Formula 1 races and provide insights for racing teams. It leverages AI models and techniques like agentic workflows, RAG, large language models, and structured data regression.',
+    link: {
+      href: 'https://github.com/yourusername/formula1-ai-analysis',
+      label: 'github.com',
+    },
+    // logo: '/images/logos/f1-ai.png',
+  },
+  {
+    name: 'T-1000',
+    description:
+      'An algorithmic trading bot that uses deep reinforcement learning to learn trading strategies from historical crypto currency data. It autonomously adjusts and optimizes trading decisions in real-time.',
+    link: {
+      href: 'https://github.com/yourusername/t-1000',
+      label: 'github.com',
+    },
+    // logo: '/images/logos/t-1000.png',
+  },
+  {
+    name: 'Nuxt.js Documentation',
+    description:
+      'Contributed to the open-source Nuxt.js project by working on the documentation for version 3. This work helped thousands of users better understand and utilize the Nuxt framework, improving the developer experience for the community.',
+    link: {
+      href: 'https://nuxt.com/docs',
+      label: 'nuxt.com',
+    },
+    // logo: '/images/logos/nuxt.png',
+  },
+  // You can add more projects here if needed
+]
+
 export default function Projects() {
-  const headline = "Things I’ve made trying to put my mark on the universe."
-  const intro="I’ve worked on tons of little projects over the years, but these are some of the ones that I’m most proud of. If you see something that piques your interest, check it out via the link below. While you're there, feel free to contribute any ideas that would make it better. Remember: Open source!"
+  const headline = "Open-source projects I've worked on."
+  const intro =
+    "I'm passionate about open-source development and leveraging cutting-edge technologies to solve complex problems. Here are some of the projects I've created or contributed to significantly."
 
   return (
     <>
-    <NextSeo
-      title="Projects - Brian Ketelsen"
-      description={siteMeta.description}
-      canonical="https://brian.dev/projects"
-      openGraph={{
-        url: 'https://brian.dev/projects',
-        images: [
-          {
-            url: `https://og.brian.dev/api/og?title=Projects&desc=${headline}`,
-            width: 1200,
-            height: 600,
-            alt: 'Og Image Alt',
-            type: 'image/jpeg',
-          }
-        ],
-        siteName: 'brian.dev',
-      }}
-    />
-      <SimpleLayout
-        title={headline}
-        intro={intro}
-      >
+      <NextSeo
+        title="Projects - Lucas Draichi"
+        description={siteMeta.description}
+        canonical="https://lucas.dev/projects"
+        openGraph={{
+          url: 'https://lucas.dev/projects',
+          images: [
+            {
+              url: `https://og.lucas.dev/api/og?title=Projects&desc=${headline}`,
+              width: 1200,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+          ],
+          siteName: 'lucas.dev',
+        }}
+      />
+      <SimpleLayout title={headline} intro={intro}>
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
