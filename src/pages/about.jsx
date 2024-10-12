@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   MastodonIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/lucas-head.png'
+import portraitImage from '@/images/photos/sorocaba.jpeg'
 import siteMeta from '@/data/siteMeta'
 import { NextSeo } from 'next-seo'
 
@@ -82,9 +82,15 @@ export default function About() {
                 from 2014, starting in my first year of studying Computer
                 Engineering. I&apos;ve been in the technology field since 2014.
                 I love exploring different programming languages and working on
-                innovative projects. Here are some highlights about me and my
-                career:
+                innovative projects.
               </p>
+              <p>
+                Currently, I live in Brazil while being an e-resident of
+                Estonia. This unique arrangement allows me to legally work in
+                the European Union, giving me the flexibility to collaborate
+                with international teams and contribute to global projects.
+              </p>
+              <p>Here are some highlights about me and my career:</p>
               <p>
                 <b>Senior Front-End Engineer:</b> Led a team at Talentify to
                 build a cutting-edge recruitment platform with over 3 million
