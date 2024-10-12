@@ -1,0 +1,81 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { Callout } from '@/components/Callout'
+
+export const meta = {
+  author: 'Brian Ketelsen',
+  date: '2022-07-12',
+  title: 'Formula 1 Lap Time Prediction',
+  description: 'Predicting Formula 1 lap times with machine learning.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+# Predicting Formula 1 Lap Times with Machine Learning: A Deep Dive
+
+## Introduction
+
+Formula 1 racing isn't just about speed and skill—it's also a goldmine of data. As a data scientist and F1 enthusiast, I've combined these passions to explore how machine learning can predict lap times with surprising accuracy. In this post, I'll take you through my journey of analyzing Formula 1 telemetry data and building a predictive model that could give race engineers a competitive edge.
+
+## The Challenge: Predicting Hamilton's Lap Time
+
+Imagine you're a strategy engineer for Mercedes. It's race day, and you need to estimate Lewis Hamilton's upcoming lap time. You have the following data:
+
+- Sector 1 time: 25.398 seconds
+- Sector 2 time: 28.589 seconds
+- Speed Trap #1 velocity: 213 km/h
+- Speed Trap #2 velocity: 251 km/h
+- Tyre compound: Medium
+- Tyre life: 8 laps
+
+With this information, can we predict Sector 3 time and, consequently, the full lap time? Spoiler alert: we can, and I'll show you how.
+
+## The Process: From Data to Predictions
+
+### 1. Data Collection and Preprocessing
+
+I used the fastf1 API to fetch real Formula 1 telemetry data. This step involved:
+
+- Cleaning the data
+- Handling missing values
+- Converting units for consistency
+- Normalizing features to ensure fair model training
+
+### 2. Feature Engineering
+
+Not all data is created equal. I focused on selecting and creating features that would be most relevant to lap time prediction, such as sector times, speed trap velocities, tyre information, and more.
+
+### 3. Model Selection and Training
+
+After experimenting with various models, I settled on a Gradient Boosted model. Why? It offered a good balance between accuracy and interpretability—crucial when you need to explain your predictions to a race engineer.
+
+### 4. Results and Insights
+
+The model performed impressively, with a Root Mean Square Error (RMSE) ranging from 0.24 to 0.15 in validation. In practical terms, this means our predictions were consistently close to the actual lap times.
+
+**Key Findings:**
+
+- Sector 1 and Sector 2 times are (unsurprisingly) the most significant predictors of overall lap time.
+- Speed trap velocities provide valuable insights into a car's performance on different parts of the track.
+- Tyre compound and life play a subtle but important role in lap time predictions.
+
+## The Prediction: Hamilton's Sector 3 Time
+
+Now, back to our initial challenge. Given the data for Lewis Hamilton's partial lap, our model predicts:
+
+**Sector 3 time: ≈22.326 seconds (±0.120 margin)**
+
+This level of precision can be a game-changer for race strategy, allowing teams to make more informed decisions about pit stops, fuel management, and overtaking opportunities.
+
+## Conclusion and Future Work
+
+This project demonstrates the power of machine learning in the high-stakes world of Formula 1 racing. While our model provides valuable insights, there's always room for improvement. Future iterations could incorporate:
+
+- More detailed car telemetry data
+- Weather conditions and their impact on performance
+- Data on other cars' positions and strategies
+
+## Get Involved
+
+Excited about the intersection of data science and motorsports? I've created a GitHub repository where I'll continue to update and refine these prediction models. Check it out, star the repo, and feel free to contribute: [https://github.com/Draichi/fastf1-predictions](https://github.com/Draichi/fastf1-predictions)
+
+Whether you're a racing fan, a data scientist, or both, there's never been a more exciting time to explore the data-driven side of Formula 1. Happy analyzing, and may your predictions be as swift as the cars on the track!
