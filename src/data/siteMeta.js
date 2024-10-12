@@ -1,7 +1,8 @@
-import logoTalentify from '@/images/logos/airbnb.svg'
-import logo2Mundos from '@/images/logos/airbnb.svg'
-import logoTagview from '@/images/logos/airbnb.svg'
-import logoIBM from '@/images/logos/airbnb.svg'
+import logoTalentify from '@/images/logos/talentify_logo.svg'
+import logo2Mundos from '@/images/logos/2mundos_logo.jpeg'
+import logoTagview from '@/images/logos/tagview_logo.jpeg'
+import logoIBM from '@/images/logos/ibm.svg'
+import logoUpwork from '@/images/logos/upwork_logo.svg'
 
 const siteMeta = {
   title: 'Lucas Draichi',
@@ -21,7 +22,7 @@ export const resume = [
   {
     company: 'Freelancer',
     title: 'AI Engineer',
-    logo: logoTalentify, // Replace with actual AI logo
+    logo: logoUpwork, // Replace with actual AI logo
     start: '2024',
     end: {
       label: 'Present',
@@ -38,7 +39,7 @@ export const resume = [
   {
     company: 'Freelance',
     title: 'Front-End Developer',
-    logo: logo2Mundos, // Replace with a generic freelance logo
+    logo: logoUpwork, // Replace with a generic freelance logo
     start: '2018',
     end: '2019',
   },

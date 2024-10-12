@@ -2,6 +2,7 @@ import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
 
 import { Card } from '@/components/Card'
+import { NuxtIcon, GitHubIcon } from '@/components/SocialIcons'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 import siteMeta from '@/data/siteMeta'
@@ -23,20 +24,20 @@ const projects = [
     description:
       'An open-source project that uses AI to predict the outcome of Formula 1 races and provide insights for racing teams. It leverages AI models and techniques like agentic workflows, RAG, large language models, and structured data regression.',
     link: {
-      href: 'https://github.com/yourusername/formula1-ai-analysis',
+      href: 'https://github.com/Draichi/fastf1-predictions',
       label: 'github.com',
     },
-    // logo: '/images/logos/f1-ai.png',
+    logo: GitHubIcon,
   },
   {
     name: 'T-1000',
     description:
       'An algorithmic trading bot that uses deep reinforcement learning to learn trading strategies from historical crypto currency data. It autonomously adjusts and optimizes trading decisions in real-time.',
     link: {
-      href: 'https://github.com/yourusername/t-1000',
+      href: 'https://github.com/Draichi/T-1000',
       label: 'github.com',
     },
-    // logo: '/images/logos/t-1000.png',
+    logo: GitHubIcon,
   },
   {
     name: 'Nuxt.js Documentation',
@@ -46,9 +47,8 @@ const projects = [
       href: 'https://nuxt.com/docs',
       label: 'nuxt.com',
     },
-    // logo: '/images/logos/nuxt.png',
+    logo: NuxtIcon,
   },
-  // You can add more projects here if needed
 ]
 
 export default function Projects() {
@@ -84,12 +84,7 @@ export default function Projects() {
           {projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <Image
-                  src={project.logo}
-                  alt=""
-                  className="h-8 w-8"
-                  unoptimized
-                />
+                <project.logo className="h-8 w-8" />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>

@@ -289,11 +289,6 @@ export default function Home({ articles }) {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href={siteMeta.author.linkedin}
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-            <SocialLink
               href={siteMeta.author.github}
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
