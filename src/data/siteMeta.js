@@ -1,118 +1,98 @@
+import logoTalentify from '@/images/logos/airbnb.svg'
+import logo2Mundos from '@/images/logos/airbnb.svg'
+import logoTagview from '@/images/logos/airbnb.svg'
+import logoIBM from '@/images/logos/airbnb.svg'
 
-import logoAmazon from '@/images/logos/aws.svg'
-import logoClarity from '@/images/logos/clarity.jpg'
-import logoMicrosoft from '@/images/logos/azure.svg'
-import logoXOR from '@/images/logos/xor.jpg'
-import logoVanilla from '@/images/logos/vanilla.svg'
-import logoFleek from '@/images/logos/fleeksvg.svg'
-import logoUblue from '@/images/logos/ublue.png'
-
-import logoGolang from '@/images/logos/icons8-golang.svg'
-import logoKubernetes from '@/images/logos/kubernetes.svg'
-import logoCaptainhook from '@/images/logos/captainhook.svg'  
 const siteMeta = {
-    title: "Brian Ketelsen",
-    description: "Brian Ketelsen is a developer advocate, keynote speaker, author, and open source practitioner.",
-    copyright: "Brian Ketelsen, CC-BY-SA",
-    author: {
-        name: "Brian Ketelsen",
-        email: "me@brian.dev",
-        twitter: "https://twitter.com/bketelsen",
-        mastodon: "https://tty0.social/@bketelsen",
-        instagram: "https://instagram.com/bketelsen",
-        github: "https://github.com/bketelsen",
-        linkedin: "https://linkedin.com/in/brianketelsen",
-        twitch: "https://twitch.tv/bketelsen",
-        youtube: "https://youtube.com/@bketelsen",
-    },
-    siteUrl: "https://brian.dev"
+  title: 'Lucas Draichi',
+  description:
+    'Lucas Draichi is a versatile software developer with experience spanning from 2014, specializing in back-end, front-end, and data science sectors.',
+  copyright: 'Lucas Draichi',
+  author: {
+    name: 'Lucas Draichi',
+    email: 'lucasdraichi@gmail.com',
+    github: 'https://github.com/lucasdraichi',
+    linkedin: 'https://www.linkedin.com/in/lucas-draichi-646a39222/',
+  },
+  siteUrl: 'https://lucas.dev',
 }
- export const resume = [
-    {
-      company: 'Amazon',
-      title: 'Principal Developer Advocate',
-      logo: logoAmazon,
-      start: '2022',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'Microsoft',
-      title: 'Principal Cloud Developer Advocate',
-      logo: logoMicrosoft,
-      start: '2017',
-      end: '2022',
-    },
-    {
-      company: 'XOR Data Exchange',
-      title: 'CIO',
-      logo: logoXOR,
-      start: '2014',
-      end: '2016',
-    },
-    {
-      company: 'Clarity Services, Inc.',
-      title: 'COO',
-      logo: logoClarity,
-      start: '2008',
-      end: '2014',
-    },
-  ]
-export const projects = [
-  {
-    name: 'Fleek',
-    description:
-      'Install and manage all the tools you need to be productive.',
-    link: { href: 'https://getfleek.dev', label: 'getfleek.dev' },
-    logo: logoFleek,
-  },
-  {
-    name: 'Universal Blue',
-    description:
-      'Custom Operating System images based on Fedora.',
-    link: { href: 'https://ublue.it', label: 'Universal Blue' },
-    logo: logoUblue,
-  },
-  {
-    name: 'Bluefin',
-    description:
-      'The next generation Linux workstation. Built for cloud-native, using cloud-native.',
-    link: { href: 'https://projectbluefin.io', label: 'Bluefin' },
-    logo: logoUblue,
-  },
-  {
-    name: 'Vanilla OS',
-    description:
-      'Vanilla OS is an immutable and atomic Ubuntu Linux-based Point Release distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.',
-    link: { href: 'https://vanillaos.org', label: 'vanillaos.org' },
-    logo: logoVanilla,
-  },
-  {
-    name: 'Captain Hook',
-    description:
-      'Custom commands as webhooks.',
-    link: { href: 'https://github.com/bketelsen/captainhook', label: 'github.com' },
-    logo: logoCaptainhook,
-  },
-  {
-    name: 'Kubernetes',
-    description:
-      'Production-Grade Container Scheduling and Management',
-    link: { href: 'https://github.com/kubernetes/kubernetes', label: 'github.com' },
-    logo: logoKubernetes,
-  },
-  {
-    name: 'Go',
-    description:
-      'Build fast, reliable, and efficient software at scale',
-    link: { href: 'https://go.dev', label: 'go.dev' },
-    logo: logoGolang,
-  },
 
-
+export const resume = [
+  {
+    company: 'Freelancer',
+    title: 'AI Engineer',
+    logo: logoTalentify, // Replace with actual AI logo
+    start: '2024',
+    end: {
+      label: 'Present',
+      dateTime: new Date().getFullYear(),
+    },
+  },
+  {
+    company: 'Talentify',
+    title: 'Senior Front-End Engineer',
+    logo: logoTalentify,
+    start: '2019',
+    end: '2024',
+  },
+  {
+    company: 'Freelance',
+    title: 'Front-End Developer',
+    logo: logo2Mundos, // Replace with a generic freelance logo
+    start: '2018',
+    end: '2019',
+  },
+  {
+    company: '2Mundos',
+    title: 'Backend Engineer',
+    logo: logo2Mundos,
+    start: '2017',
+    end: '2018',
+  },
+  {
+    company: 'Tagview',
+    title: 'Frontend Engineer',
+    logo: logoTagview,
+    start: '2015',
+    end: '2016',
+  },
+  {
+    company: 'IBM',
+    title: 'Web Builder',
+    logo: logoIBM,
+    start: '2014',
+    end: '2015',
+  },
 ]
 
+export const projects = [
+  {
+    name: 'Formula 1 AI Analysis',
+    description:
+      'An open-source project that uses AI to predict the outcome of Formula 1 races and provide insights for racing teams. It leverages AI models and techniques like agentic workflows, RAG, large language models, and structured data regression.',
+    link: {
+      href: 'https://github.com/lucasdraichi/formula1-ai-analysis',
+      label: 'github.com',
+    },
+    logo: '/images/logos/f1-ai.png',
+  },
+  {
+    name: 'T-1000',
+    description:
+      'An algorithmic trading bot that uses deep reinforcement learning to learn trading strategies from historical crypto currency data. It autonomously adjusts and optimizes trading decisions in real-time.',
+    link: {
+      href: 'https://github.com/lucasdraichi/t-1000',
+      label: 'github.com',
+    },
+    logo: '/images/logos/t-1000.png',
+  },
+  {
+    name: 'Nuxt.js Documentation',
+    description:
+      'Contributed to the open-source Nuxt.js project by working on the documentation for version 3. This work helped thousands of users better understand and utilize the Nuxt framework, improving the developer experience for the community.',
+    link: { href: 'https://nuxt.com/docs', label: 'nuxt.com' },
+    logo: '/images/logos/nuxt.png',
+  },
+]
 
-export default siteMeta;
+export default siteMeta
