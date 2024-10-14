@@ -1,10 +1,7 @@
-import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
-
 import { Card } from '@/components/Card'
 import { NuxtIcon, GitHubIcon } from '@/components/SocialIcons'
 import { SimpleLayout } from '@/components/SimpleLayout'
-
 import siteMeta from '@/data/siteMeta'
 
 function LinkIcon(props) {
@@ -61,19 +58,19 @@ export default function Projects() {
       <NextSeo
         title="Projects - Lucas Draichi"
         description={siteMeta.description}
-        canonical="https://lucas.dev/projects"
+        canonical="https://draichiboard.com/projects"
         openGraph={{
-          url: 'https://lucas.dev/projects',
+          url: 'https://draichiboard.com/projects',
           images: [
             {
-              url: `https://og.lucas.dev/api/og?title=Projects&desc=${headline}`,
+              url: `https://draichiboard.com/api/og?title=Projects&desc=${headline}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'lucas.dev',
+          siteName: 'draichiboard.com',
         }}
       />
       <SimpleLayout title={headline} intro={intro}>

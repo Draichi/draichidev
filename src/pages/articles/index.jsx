@@ -42,21 +42,21 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <NextSeo
-        title="Articles - Brian Ketelsen"
+        title="Articles - Lucas Draichi"
         description={siteMeta.description}
-        canonical="https://brian.dev/articles"
+        canonical="https://draichiboard.com/articles"
         openGraph={{
-          url: 'https://brian.dev/articles',
+          url: 'https://draichiboard.com/articles',
           images: [
             {
-              url: `https://og.brian.dev/api/og?title=Articles&desc=${headline}`,
+              url: `https://draichiboard.com/api/og?title=Articles&desc=${headline}`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'brian.dev',
+          siteName: 'draichiboard.com',
         }}
       />
       <SimpleLayout title={headline} intro={intro}>

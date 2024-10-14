@@ -1,15 +1,9 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  MastodonIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/photos/sorocaba.jpeg'
 import siteMeta from '@/data/siteMeta'
 import { NextSeo } from 'next-seo'
@@ -28,36 +22,25 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
-  )
-}
-
 export default function About() {
   return (
     <>
       <NextSeo
         title="About - Lucas Draichi"
         description="Lucas Draichi - Versatile software developer with experience in back-end, front-end, and data science"
-        canonical="https://lucas.dev/about"
+        canonical="https://draichiboard.com/about"
         openGraph={{
-          url: 'https://lucas.dev/about',
+          url: 'https://draichiboard.com/about',
           images: [
             {
-              url: `https://og.lucas.dev/api/og?title=About&desc=Lucas Draichi - Versatile software developer`,
+              url: `https://draichiboard.com/api/og?title=About&desc=Lucas Draichi - Versatile software developer`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'lucas.dev',
+          siteName: 'draichiboard.com',
         }}
       />
       <Container className="mt-16 sm:mt-32">
@@ -127,9 +110,6 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              {/* <SocialLink href={siteMeta.author.twitter} icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink> */}
               <SocialLink
                 href={siteMeta.author.linkedin}
                 icon={LinkedInIcon}

@@ -29,21 +29,21 @@ export default function Uses() {
   return (
     <>
       <NextSeo
-        title="Uses - Brian Ketelsen"
+        title="Uses - Lucas Draichi"
         description={siteMeta.description}
-        canonical="https://brian.dev/uses"
+        canonical="https://draichiboard.com/uses"
         openGraph={{
-          url: 'https://brian.dev/uses',
+          url: 'https://draichiboard.com/uses',
           images: [
             {
-              url: `https://og.brian.dev/api/og?title=Uses&desc=Things I use every day to get my work done.`,
+              url: `https://draichiboard.com/api/og?title=Uses&desc=Things I use every day to get my work done.`,
               width: 1200,
               height: 600,
               alt: 'Og Image Alt',
               type: 'image/jpeg',
             },
           ],
-          siteName: 'brian.dev',
+          siteName: 'draichiboard.com',
         }}
       />
       <SimpleLayout

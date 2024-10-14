@@ -15,7 +15,7 @@ const siteMeta = {
     github: 'https://github.com/lucasdraichi',
     linkedin: 'https://www.linkedin.com/in/lucas-draichi-646a39222/',
   },
-  siteUrl: 'https://lucas.dev',
+  siteUrl: 'https://draichiboard.com',
 }
 
 export const resume = [
