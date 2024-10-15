@@ -36,13 +36,13 @@ export const resume = [
     start: '2019',
     end: '2024',
   },
-  {
-    company: 'Freelance',
-    title: 'Front-End Developer',
-    logo: logoUpwork, // Replace with a generic freelance logo
-    start: '2018',
-    end: '2019',
-  },
+  // {
+  //   company: 'Freelance',
+  //   title: 'Front-End Developer',
+  //   logo: logoUpwork, // Replace with a generic freelance logo
+  //   start: '2018',
+  //   end: '2019',
+  // },
   {
     company: '2Mundos',
     title: 'Backend Engineer',
@@ -50,13 +50,13 @@ export const resume = [
     start: '2017',
     end: '2018',
   },
-  {
-    company: 'Tagview',
-    title: 'Frontend Engineer',
-    logo: logoTagview,
-    start: '2015',
-    end: '2016',
-  },
+  // {
+  //   company: 'Tagview',
+  //   title: 'Frontend Engineer',
+  //   logo: logoTagview,
+  //   start: '2015',
+  //   end: '2016',
+  // },
   {
     company: 'IBM',
     title: 'Web Builder',
