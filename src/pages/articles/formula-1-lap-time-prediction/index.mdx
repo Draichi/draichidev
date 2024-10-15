@@ -42,9 +42,14 @@ I used the fastf1 API to fetch real Formula 1 telemetry data. This step involved
 - Converting units for consistency
 - Normalizing features to ensure fair model training
 
+![Data Collection and Preprocessing](/articles/formula-1-time-prediction/data-collection.png)
+
 ### 2. Feature Engineering
 
 Not all data is created equal. I focused on selecting and creating features that would be most relevant to lap time prediction, such as sector times, speed trap velocities, tyre information, and more.
+
+![Feature Engineering](/articles/formula-1-time-prediction/feature-engineering.png)
+This image shows all the data points I used to train the model (the less scattered the better)
 
 ### 3. Model Selection and Training
 
@@ -61,6 +66,9 @@ The model performed impressively, with a Root Mean Square Error (RMSE) ranging f
 - Tyre compound and life play a subtle but important role in lap time predictions.
 
 ## The Prediction: Hamilton's Sector 3 Time
+
+![Predicted vs Actual Lap Times](/articles/formula-1-time-prediction/predicted_data.png)
+(The closer the values on the y-axis, the better)
 
 Now, back to our initial challenge. Given the data for Lewis Hamilton's partial lap, our model predicts:
 
@@ -81,3 +89,5 @@ This project demonstrates the power of machine learning in the high-stakes world
 Excited about the intersection of data science and motorsports? I've created a GitHub repository where I'll continue to update and refine these prediction models. Check it out, star the repo, and feel free to contribute: [https://github.com/Draichi/fastf1-predictions](https://github.com/Draichi/fastf1-predictions)
 
 Whether you're a racing fan, a data scientist, or both, there's never been a more exciting time to explore the data-driven side of Formula 1. Happy analyzing, and may your predictions be as swift as the cars on the track!
+
+For more details, check out the [Kaggle notebook](https://www.kaggle.com/code/lucasdraichi/hamilton-lap-time-prediction) I created for this project.
